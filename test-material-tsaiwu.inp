@@ -1,0 +1,22 @@
+analysis_type	700		# transversely isotropic linear elastic, ideal plastic tsai-wu model
+
+# Parameters identified for BBT-QuartzPhyllite with horizontal foliation planes,
+# assuming isotropic material behaviour
+
+n_yf 1				# number of yield functions
+n_int_vars 0		# number of internal variables
+n_int_vars_dam 0	# number of internal damage variables
+n_omega 0			# number of damage variables
+
+E1	59803.						# 1.  E-Modul parallel to the structure (isotropic) plane [N/mm2]
+nu1	0.226						# 2. poisson ratio perpendicular to the structure (isotropic) plane [-]
+E2  51856.						# 3. E-Modul perpendicular to the structure (isotropic) plane [N/mm2]
+G2  21651.						# 4. shear modulus for shear loading in/parallel to the structure (isotropic) plane [N/mm2]
+nu2 0.124						# 5. poisson ration in the structure (isotropic) plane [-]
+F2  0.163063230388
+F3  0.0627388989024
+F22 0.00215077551657
+F33 0.000535452492295
+F44 0.0173037672289
+F12 -0.00188304927042
+F23 -0.000267726246147

@@ -1,0 +1,34 @@
+analysis_type	600		# elastic-plastic anisotropic modified leon with scalar damage, formulated for rock, i.e m0 and e instead of ftu and fbu
+
+# Parameters identified for BBT-QuartzPhyllite with horizontal foliation planes,
+# assuming isotropic material behaviour
+
+n_yf 2				# number of yield functions
+n_int_vars 1		# number of internal variables
+n_int_vars_dam 1	# number of internal damage variables
+n_omega 1			# number of damage variables
+
+E1	59803.						# 1.  E-Modul parallel to the structure (isotropic) plane [N/mm2]
+nu1	0.226						# 2. poisson ratio perpendicular to the structure (isotropic) plane [-]
+fcy	0.36						# 3. uniaxial compressive yield strength defined as relative value of fcu
+#fcu_mean	9.75107014e+00		# 4. mean uniaxial ultimate compressive strength
+fcu_mean	15.					# 4. mean uniaxial ultimate compressive strength
+m0	21.19351463					# 5. friction parameter
+e	0.51						# 6. eccentricity parameter
+mg0 1.87168663006609E+01		# 7. dilatancy angle (mean value from isotropic identifications)
+Ah  6.20649700273862E-02		# 8. model parameter for x_h (mean value from isotropic identifications)
+Bh  2.06764249606350E-06		# 9. model parameter for x_h (mean value from isotropic identifications)
+Ch  3.41739238537717E+01		# 10. model parameter for x_h (mean value from isotropic identifications)
+Dh  1.e-6						# 11. model parameter for x_h
+GfI 0.1							# 12. mode I fracture energy (damage deactivated)
+As  1.							# 13. damage parameter (damage deactivated)
+Ad	1.							# 14. model parameter for shape of damage evolution function (Ad > 0, i.e. positive)  (damage deactivated)
+Bd	1.							# 15. model parameter for shape of damage evolution function (Bd > 1.)	 (damage deactivated)
+#Aa1 3.55429121e-05				# 16. first anistropy parameter (independent component of fabric tensor) (anisotropy deactivated)
+Aa1 0.							# 16. first anistropy parameter (independent component of fabric tensor) (anisotropy deactivated)
+ba1	1.99752607e+09				# 17. second anisotropy variable
+ba2	0.							# 18. third anisotropy variable
+ba3	0.							# 19. fourth anisotropy variable
+E2  51856.						# 20. E-Modul perpendicular to the structure (isotropic) plane [N/mm2]
+G2  21651.						# 21. shear modulus for shear loading in/parallel to the structure (isotropic) plane [N/mm2]
+nu2 0.124						# 22. poisson ration in the structure (isotropic) plane [-]
